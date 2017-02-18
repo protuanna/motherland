@@ -1,0 +1,6 @@
+var script = document.createElement('script');
+script.onload = function () {
+    fbInboxFillPage('https://www.facebook.com/vietherb.vn','https://onapp.haravan.com/facebookinbox/static/images/fb-icon-2.png','#3366CC','#797979','#FFFFFF','0','Liên hệ với chúng tôi!',true),facebookShowPanelButton();
+};
+script.src = "https://onapp.haravan.com/facebookinbox/static/javascripts/fb-box.js?v=1472398971736";
+document.getElementsByTagName('head')[0].appendChild(script);
