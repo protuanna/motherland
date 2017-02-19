@@ -162,7 +162,7 @@ ul.expanded > li, ol.expanded > li { margin-bottom: 10px; }
 .input-group input,
 .input-group select,
 .input-group textarea{
-	color: #333333!imoprtant;
+	color: #333333 !important;
 }
 /****************HOME*********************/
 .scrollToTop {
@@ -432,7 +432,7 @@ min-width: 270px;
 .search-bar{margin-top:5px;display:inline-block;}
 
 .nav-login {
-	width: 4rem;
+	width: 10rem;
 	height: 5rem;
 	font-size: 3rem;
 	line-height: 2.5rem;
@@ -443,7 +443,20 @@ min-width: 270px;
 	padding: 1.2rem 0rem;
 	display: inline-block;
 }
+.nav-login a i{
+	color: #4d4d4d;
+}
+.nav-login a i:hover{
+	color: #28b241;
+}
+
 .icon.icon-user {
+	width: auto;
+	height: 22px;
+	position: relative;
+	fill: #4d4d4d;
+}
+.icon.icon-messenger {
 	width: auto;
 	height: 22px;
 	position: relative;
@@ -828,7 +841,7 @@ min-width: 225px!important;
 	border-bottom: 4px dashed transparent;
 	border-left: 4px solid;
 }
-***********MENU *******/
+/***********MENU *******/
 @media (min-width: 768px) {
 	.navbar-header {
 		float: left;
@@ -850,7 +863,7 @@ min-width: 225px!important;
 		color: #f45c5d;
 	}
 
-	.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus , {
+	.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
 		background-color: transparent;
 	}
 }
@@ -4076,7 +4089,7 @@ span.action_link {
 		position: absolute;
 		padding-top: 15px;
 		padding-bottom: 15px;
-		text-align: top;
+/*		text-align: top;*/
 		bottom: 0;
 		left: 100%;
 		transition: all 500ms ease;
@@ -4087,8 +4100,8 @@ span.action_link {
 		margin-bottom: 0 !important;
 		padding-left: 0 !important;
 		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
+/*		display: -moz-flex;
+		display: -ms-flex;*/
 		display: flex;
 		display: -webkit-box;
 		display: -moz-box;
@@ -4209,7 +4222,7 @@ span.action_link {
 	#navbar .dropdown open, #navbar li:hover > a:first-child {
 		color: #28b241;
 	}
-	.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus ,{
+	.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
 		background-color: transparent;
 	}
 
@@ -4291,6 +4304,7 @@ span.action_link {
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 		background: #fff;
 		text-align: center;
+	position: fixed !important;
 	}
 
 	.logo.logo-mobile {
@@ -4673,3 +4687,18 @@ position: relative;
 	padding-right: 5px;
 }
 .box-like-socials-article  .fb_iframe_widget_lift{z-index:6;}
+
+/*bonus*/
+.logo{
+	position: relative;
+}
+.logo h1 span{
+	position: absolute;
+	top: 20px;
+	left: 90px;
+	font-size: 20px;
+	color: #6b3013;
+	font-weight: normal;
+	font-family: Roboto, sans-serif;
+	text-transform: uppercase;
+}

@@ -23,7 +23,7 @@ class HomeController extends BaseController {
 	}
 
 	public function index(){
-	    $this->layout = View::make('Web.index');
+	    $this->layout = View::make('Web._index');
     }
 
 
