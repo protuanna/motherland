@@ -2,99 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="687bb180-18d3-40f7-8c35-0e504d84f9d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/image/icon_featured.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/image/slideshow_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/image/slideshow_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/image/slideshow_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/Web/_index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/js/default_script.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/js/fixheightproductv2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/js/jquery-migrate-1.2.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/js/jquery.flexslider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/js/jquery.min.1.11.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/js/jquery.touchSwipe.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/js/plugin.1.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/asset/site/js/scripts.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/10440261_10203567828256883_722240162109209411_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/12733504_837933909668859_9143156264606370139_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/14581466_1455018691192097_3505735238589169903_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/14724458_1100340320050622_1739540551633930686_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/15380738_1502461149765081_4047277993610292061_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/15894751_1474602579219090_2259808381393588249_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/16298715_299725467092483_4112520163843396512_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/16299211_10206265866885730_6258600077769817703_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/16711794_807572212726596_6372373628196846493_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/16806886_232023520593157_8305916553116848954_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/1920353_937343672959604_3404947847569580334_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/7h8vRF-iAPT.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/NNAUxYnKfd8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/OAL47Qzn37r.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/WGh_cugM6lz.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/Xw9VNcnTyYg.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/a8785b0b35454740a7da772ee3032a9c_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/a8gAm-njvZ0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/analytics.js(1).tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/analytics.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/ao6eUeuGXQq(1).html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/ao6eUeuGXQq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/api.jquery.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/bbb135152c294367a86b7469fc08e9eb_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/block_home_category1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/block_home_category2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/bootstrap.3.3.1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/bootstrap.min.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/default_script.min.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/default_style.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/e811978672e849a1ab6d277c744dac6f_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/eNH2mCDZzyI.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/fb-box.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/fixheightproductv2.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/flexslider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/haravan.plugin.1.0.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/icon_featured.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/icon_sale.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_1157_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_1165_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_1574_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_1578_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_1626_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_1627_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_2558_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_3448_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_3472_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_3800_f116f5beeff1416796cf329be438f1ca_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_3804_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/img_3804_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/jquery-migrate-1.2.0.min.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/jquery.flexslider.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/jquery.min.1.11.0.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/jquery.touchSwipe.min.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/ksAnroZwVWc.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/noname_a4116837-7f29-4229-7ff6-4f94e764e65a.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/option_selection.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/roboto.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/scripts.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/sdk.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/slideshow_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/slideshow_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/slideshow_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/tUUs2j78Gvz.js.tải xuống" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/untitled-1_f7ef1bdbd0334847b002833af802861f_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/untitled-2_5fb911d46fc04bed9a1018e404d769ce_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/untitled-3_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/vh-_grenoo_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/vh-_ngam_chan_thao_duoc_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/asset/site/Thuốc nam của người Việt – Vietherb_files/vietherb_-_essenoo_mang_tang_large.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Web/index.blade.php" afterPath="$PROJECT_DIR$/app/views/Web/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/asset/site/css/styles.css" afterPath="$PROJECT_DIR$/public/asset/site/css/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -125,8 +34,8 @@
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="76" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
+            <state relative-caret-position="425">
+              <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -135,8 +44,8 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Web/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="43" column="60" lean-forward="true" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+            <state relative-caret-position="533">
+              <caret line="43" column="60" lean-forward="false" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -184,64 +93,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.1.0.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/asset/site/js/plugin.1.0.js">
+      <file leaf-file-name="Vietherb - Thanh toán đơn hàng.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/asset/site/Vietherb - Thanh toán đơn hàng.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="510" column="0" lean-forward="false" selection-start-line="510" selection-start-column="0" selection-end-line="510" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="61" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="962" selection-end-column="0" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#251#17439#0" expanded="false" />
-                <element signature="e#1034#10949#0" expanded="false" />
-                <element signature="e#11028#12432#0" expanded="false" />
-                <element signature="e#12522#14896#0" expanded="false" />
-                <element signature="e#14990#16296#0" expanded="false" />
-                <element signature="e#16358#16811#0" expanded="false" />
-                <element signature="e#16879#17007#0" expanded="false" />
-                <element signature="e#17071#17143#0" expanded="false" />
-                <element signature="e#17227#17437#0" expanded="false" />
-                <element signature="e#17725#44901#0" expanded="false" />
-                <element signature="e#18895#23805#0" expanded="false" />
-                <element signature="e#23983#24365#0" expanded="false" />
-                <element signature="e#24613#29194#0" expanded="false" />
-                <element signature="e#29388#31099#0" expanded="false" />
-                <element signature="e#31291#31711#0" expanded="false" />
-                <element signature="e#31900#32181#0" expanded="false" />
-                <element signature="e#32367#32540#0" expanded="false" />
-                <element signature="e#32717#33812#0" expanded="false" />
-                <element signature="e#33973#34965#0" expanded="false" />
-                <element signature="e#35185#35353#0" expanded="false" />
-                <element signature="e#40701#41877#0" expanded="false" />
-                <element signature="e#42087#42657#0" expanded="false" />
-                <element signature="e#42844#43063#0" expanded="false" />
-                <element signature="e#43230#43593#0" expanded="false" />
-                <element signature="e#45151#54600#0" expanded="false" />
-                <element signature="e#54863#114091#0" expanded="false" />
-                <element signature="e#114357#117348#0" expanded="false" />
+                <element signature="e#8755#9896#0" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-migrate-1.2.0.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/asset/site/js/jquery-migrate-1.2.0.min.js">
+      <file leaf-file-name="checkout.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/Web/checkout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="380">
+              <caret line="365" column="50" lean-forward="false" selection-start-line="365" selection-start-column="50" selection-end-line="365" selection-end-column="50" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fixheightproductv2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/asset/site/js/fixheightproductv2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13488">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1076#1359#0#HTML" expanded="false" />
+                <element signature="e#1111#1349#0#HTML" expanded="false" />
+                <element signature="e#1430#5061#0#HTML" expanded="false" />
+                <element signature="e#5095#6788#0#HTML" expanded="false" />
+                <element signature="e#6850#7232#0#HTML" expanded="false" />
+                <element signature="e#7303#8706#0#HTML" expanded="false" />
+                <element signature="e#8736#8777#0#HTML" expanded="false" />
+                <element signature="e#8815#8850#0#HTML" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -251,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/public/asset/site/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="371">
-              <caret line="4293" column="0" lean-forward="true" selection-start-line="4293" selection-start-column="0" selection-end-line="4293" selection-end-column="0" />
+              <caret line="4293" column="0" lean-forward="false" selection-start-line="4293" selection-start-column="0" selection-end-line="4293" selection-end-column="0" />
               <folding>
                 <element signature="e#25530#25932#0" expanded="false" />
                 <element signature="e#27087#27275#0" expanded="false" />
@@ -282,58 +161,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_index.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/Web/_index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="268" column="65" lean-forward="false" selection-start-line="268" selection-start-column="65" selection-end-line="268" selection-end-column="65" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#1;n#aside#0;n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#symbol#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#symbol#1;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#svg#0;n#symbol#2;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#svg#0;n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#svg#0;n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phone-receiver.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/phone-receiver.svg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-257">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="52" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebook-messenger.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/facebook-messenger.svg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="79" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="340" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.logo</find>
-      <find>@me</find>
-      <find>sub-arrow</find>
-      <find>menu-mobile</find>
-      <find>click-menu-mobile</find>
-      <find>mm-current</find>
-      <find>navbar-toggle</find>
-      <find>mm-next</find>
       <find>cart-view</find>
       <find>dropdown</find>
       <find>cssmenu</find>
@@ -348,7 +179,6 @@
       <find>_onCloseHelper</find>
       <find>Đăng nhập</find>
       <find>logo</find>
-      <find>slide-next</find>
       <find>svg</find>
       <find>icon-sort-b</find>
       <find>icon-add</find>
@@ -356,6 +186,15 @@
       <find>navbar-header</find>
       <find>.nav-login</find>
       <find>tel</find>
+      <find>phone</find>
+      <find>slide-next</find>
+      <find>field-input-wrapper</find>
+      <find>field-show-floating-label</find>
+      <find>funcFieldHasValue</find>
+      <find>effectControlFieldClass</find>
+      <find>funcSetEvent</find>
+      <find>funcInit</find>
+      <find>order-summary-toggle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -365,10 +204,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/public/asset/site/Xông tắm tất niên – Vietherb.htm" />
-        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/views/Web/index.blade.php" />
         <option value="$PROJECT_DIR$/public/asset/site/css/styles.css" />
         <option value="$PROJECT_DIR$/app/views/Web/_index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/Web/checkout.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -447,10 +287,6 @@
               <option name="myItemId" value="site" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -471,6 +307,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -633,12 +473,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487404957435</updated>
-      <workItem from="1487404959267" duration="24388000" />
+      <workItem from="1487404959267" duration="29840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24388000" />
+    <option name="totallyTimeSpent" value="29840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
@@ -776,20 +616,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="76" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/asset/site/js/jquery-migrate-1.2.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="18" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -815,7 +647,7 @@
         <state relative-caret-position="170">
           <caret line="510" column="0" lean-forward="false" selection-start-line="510" selection-start-column="0" selection-end-line="510" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
             <element signature="e#251#17439#0" expanded="false" />
             <element signature="e#1034#10949#0" expanded="false" />
             <element signature="e#11028#12432#0" expanded="false" />
@@ -850,7 +682,7 @@
     <entry file="file://$USER_HOME$/Desktop/facebook-messenger.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="79" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="340" />
+          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="340" />
           <folding />
         </state>
       </provider>
@@ -860,15 +692,74 @@
         <state relative-caret-position="-13488">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/phone-receiver.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-257">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="52" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/asset/site/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="4293" column="0" lean-forward="false" selection-start-line="4293" selection-start-column="0" selection-end-line="4293" selection-end-column="0" />
+          <folding>
+            <element signature="e#25530#25932#0" expanded="false" />
+            <element signature="e#27087#27275#0" expanded="false" />
+            <element signature="e#27837#28070#0" expanded="false" />
+            <element signature="e#35385#35484#0" expanded="false" />
+            <element signature="e#35485#35922#0" expanded="false" />
+            <element signature="e#35923#36389#0" expanded="false" />
+            <element signature="e#36390#37029#0" expanded="false" />
+            <element signature="e#37030#37392#0" expanded="false" />
+            <element signature="e#37430#37838#0" expanded="false" />
+            <element signature="e#37889#38089#0" expanded="false" />
+            <element signature="e#38133#38169#0" expanded="false" />
+            <element signature="e#38188#38366#0" expanded="false" />
+            <element signature="e#45965#46037#0" expanded="false" />
+            <element signature="e#46052#46138#0" expanded="false" />
+            <element signature="e#46151#46198#0" expanded="false" />
+            <element signature="e#49080#49466#0" expanded="false" />
+            <element signature="e#75310#77995#0" expanded="false" />
+            <element signature="e#79975#80115#0" expanded="false" />
+            <element signature="e#89048#92108#0" expanded="false" />
+            <element signature="e#92109#92505#0" expanded="false" />
+            <element signature="e#97508#98630#0" expanded="false" />
+            <element signature="e#98631#98746#0" expanded="false" />
+            <element signature="e#98747#98943#0" expanded="false" />
+            <element signature="e#98944#100790#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Web/_index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="268" column="65" lean-forward="false" selection-start-line="268" selection-start-column="65" selection-end-line="268" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#1;n#aside#0;n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#1;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#symbol#2;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Web/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="43" column="60" lean-forward="true" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+        <state relative-caret-position="533">
+          <caret line="43" column="60" lean-forward="false" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -915,61 +806,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/phone-receiver.svg">
+    <entry file="file://$PROJECT_DIR$/public/asset/site/Vietherb - Thanh toán đơn hàng.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="52" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/asset/site/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="4293" column="0" lean-forward="true" selection-start-line="4293" selection-start-column="0" selection-end-line="4293" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="61" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="962" selection-end-column="0" />
           <folding>
-            <element signature="e#25530#25932#0" expanded="false" />
-            <element signature="e#27087#27275#0" expanded="false" />
-            <element signature="e#27837#28070#0" expanded="false" />
-            <element signature="e#35385#35484#0" expanded="false" />
-            <element signature="e#35485#35922#0" expanded="false" />
-            <element signature="e#35923#36389#0" expanded="false" />
-            <element signature="e#36390#37029#0" expanded="false" />
-            <element signature="e#37030#37392#0" expanded="false" />
-            <element signature="e#37430#37838#0" expanded="false" />
-            <element signature="e#37889#38089#0" expanded="false" />
-            <element signature="e#38133#38169#0" expanded="false" />
-            <element signature="e#38188#38366#0" expanded="false" />
-            <element signature="e#45965#46037#0" expanded="false" />
-            <element signature="e#46052#46138#0" expanded="false" />
-            <element signature="e#46151#46198#0" expanded="false" />
-            <element signature="e#49080#49466#0" expanded="false" />
-            <element signature="e#75310#77995#0" expanded="false" />
-            <element signature="e#79975#80115#0" expanded="false" />
-            <element signature="e#89048#92108#0" expanded="false" />
-            <element signature="e#92109#92505#0" expanded="false" />
-            <element signature="e#97508#98630#0" expanded="false" />
-            <element signature="e#98631#98746#0" expanded="false" />
-            <element signature="e#98747#98943#0" expanded="false" />
-            <element signature="e#98944#100790#0" expanded="false" />
+            <element signature="e#8755#9896#0" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Web/_index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="268" column="65" lean-forward="false" selection-start-line="268" selection-start-column="65" selection-end-line="268" selection-end-column="65" />
+        <state relative-caret-position="425">
+          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Web/checkout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="365" column="50" lean-forward="false" selection-start-line="365" selection-start-column="50" selection-end-line="365" selection-end-column="50" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#1;n#aside#0;n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#symbol#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#symbol#1;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#svg#0;n#symbol#2;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#svg#0;n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1076#1359#0#HTML" expanded="false" />
+            <element signature="e#1111#1349#0#HTML" expanded="false" />
+            <element signature="e#1430#5061#0#HTML" expanded="false" />
+            <element signature="e#5095#6788#0#HTML" expanded="false" />
+            <element signature="e#6850#7232#0#HTML" expanded="false" />
+            <element signature="e#7303#8706#0#HTML" expanded="false" />
+            <element signature="e#8736#8777#0#HTML" expanded="false" />
+            <element signature="e#8815#8850#0#HTML" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
