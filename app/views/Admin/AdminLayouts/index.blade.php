@@ -35,6 +35,7 @@
     {{ HTML::script('assets/js/ace-elements.min.js'); }}
     {{ HTML::script('assets/js/moment.min.js'); }}
     {{ HTML::script('assets/js/bootbox.min.js'); }}
+    {{ HTML::script('assets/admin/js/format.js'); }}
 </head>
 
 <body class="no-skin">
