@@ -32,11 +32,7 @@
                     window.location = currentUrl;
             }
         };
-
-
-
         var isInit = false;
-
         function funcFormOnSubmit(e) {
 
             if(!isInit) {
@@ -255,23 +251,6 @@
     <script type="text/javascript">
         var toggleShowOrderSummary = false;
         $(document).ready(function() {
-            var currentUrl = '';
-
-
-            currentUrl = 'http://vietherb.vn/checkouts/4139c72ef9ff47e99b78bf42f7095265?step=1';
-
-
-            if ($('#reloadValue').val().length == 0)
-            {
-                $('#reloadValue').val(currentUrl);
-                $('body').show();
-            }
-            else
-            {
-                window.location = $('#reloadValue').val();
-                $('#reloadValue').val('');
-            }
-
             $('body')
                 .on('click', '.order-summary-toggle', function() {
                     toggleShowOrderSummary = !toggleShowOrderSummary;
@@ -304,50 +283,9 @@
                 });
         });
     </script>
-
-    <script>
-        //<![CDATA[
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-83900403-1', 'auto');
-        try {
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-83900403-1', 'auto');
-            ga('send', 'pageview');
-        } catch (e) {};
-        ga('send', 'pageview');
-
-        //]]>
-    </script>
-    <script type='text/javascript'>
-        //<![CDATA[
-        if ((typeof Haravan) === 'undefined') {
-            Haravan = {};
-        }
-        Haravan.culture = 'vi-VN';
-        Haravan.shop = 'thuocnamviet.myharavan.com';
-        Haravan.theme = {"name":"fresh food","id":1000206992,"role":"main"};
-        Haravan.domain = 'vietherb.vn';
-        //]]>
-    </script>
-
 </head>
 <body>
 
-<input id="reloadValue" type="hidden" name="reloadValue" value="" />
-<div class="banner">
-    <div class="wrap">
-        <a href="http://vietherb.vn" class="logo">
-            <h1 class="logo-text">Vietherb</h1>
-        </a>
-    </div>
-</div>
 <button class="order-summary-toggle order-summary-toggle-hide">
     <div class="wrap">
         <div class="order-summary-toggle-inner">
@@ -368,44 +306,8 @@
         </div>
     </div>
 </button>
-<div class="content content-second">
-    <div class="wrap">
-        <div class="sidebar sidebar-second">
-            <div class="sidebar-content">
-                <div class="order-summary">
-                    <div class="order-summary-sections">
 
-
-                        <div class="order-summary-section order-summary-section-discount" data-order-summary-section="discount">
-                            <form id="form_discount_add" accept-charset="UTF-8" method="post">
-                                <input name="utf8" type="hidden" value="✓">
-                                <div class="fieldset">
-                                    <div class="field  ">
-                                        <div class="field-input-btn-wrapper">
-                                            <div class="field-input-wrapper">
-                                                <label class="field-label" for="discount.code">Mã giảm giá</label>
-                                                <input placeholder="Mã giảm giá" class="field-input" data-discount-field="true" autocomplete="off" autocapitalize="off" spellcheck="false" size="30" type="text" id="discount.code" name="discount.code" value="" />
-                                            </div>
-                                            <button type="submit" class="field-input-btn btn btn-default btn-disabled">
-                                                <span class="btn-content">Sử dụng</span>
-                                                <i class="btn-spinner icon icon-button-spinner"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="content">
-
     <div class="wrap">
         <div class="sidebar">
             <div class="sidebar-content">
