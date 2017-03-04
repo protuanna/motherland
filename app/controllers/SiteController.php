@@ -1,6 +1,6 @@
 <?php
 
-class HomeController extends BaseController {
+class SiteController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -15,15 +15,25 @@ class HomeController extends BaseController {
 	|
 	*/
 
-    //protected $layout = '';
+    protected $layout = 'Web.init';
 
-	public function showWelcome()
-	{
-		return View::make('hello');
-	}
+    public function __construct()
+    {
+        $subMenu = Page::getSubMenu();
+        $listProduct = Product::getListAll();
+        View::share('subMenu',$subMenu);
+        View::share('listProduct',$listProduct);
+    }
 
-	public function index(){
-	    $this->layout = View::make('Web.checkout');
+    public function showWelcome()
+    {
+        return View::make('hello');
+    }
+
+    public function home()
+    {
+
+        //$this->layout = View::make('Web._index');
     }
 
 

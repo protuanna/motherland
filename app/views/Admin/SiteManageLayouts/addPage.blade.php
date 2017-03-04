@@ -46,8 +46,8 @@
                 <div class="form-group col-sm-6">
                     <label for="page_status"><i>Loại page</i></label>
                     <select name="page_type" id="page_type" class="form-control input-sm">
-                        <option value="1" @if(isset($param['page_type']) && $param['page_type'] == 1) selected @endif>Chính sách</option>
-                        <option value="2" @if(isset($param['page_type']) && $param['page_type'] == 2) selected @endif>Hỗ trợ</option>
+                        <option value="1" @if(isset($param['page_type']) && $param['page_type'] == 1) selected @endif>SubMenu</option>
+                        <option value="2" @if(isset($param['page_type']) && $param['page_type'] == 2) selected @endif>LandingPage</option>
                     </select>
                 </div>
                 {{--<div class="form-group col-sm-6">

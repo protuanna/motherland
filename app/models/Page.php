@@ -39,4 +39,8 @@ class Page extends Eloquent
             return false;
         }
     }
+
+    public static function getSubMenu(){
+        return Page::where('page_status', 1)->where('page_type',1)->get();
+    }
 }

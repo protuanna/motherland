@@ -32,7 +32,7 @@ class Product extends Eloquent
     }
 
     public static function getListAll() {
-        $product = Product::where('product_id', '>', 0)->orderBy('product_name')->lists('product_Name','product_id');
+        $product = Product::where('product_id', '>', 0)->where('product_status', 1)->orderBy('product_name')->lists('product_Name','product_id');
         return $product ? $product : array();
     }
 
