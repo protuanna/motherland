@@ -16,7 +16,7 @@ Route::group(array('prefix' => '', 'before' => ''), function () {
     Route::get('/p{id}/{name}', array('as' => 'site.page', 'uses' => 'SiteController@page'))->where('id', '[0-9]+');
     Route::get('/d{id}/{name}', array('as' => 'site.detail', 'uses' => 'SiteController@detail'))->where('id', '[0-9]+');
     Route::get('/thanh-toan', array('as' => 'site.payment_method', 'uses' => 'SiteController@paymentMethod'));
-    Route::get('/lien-he', array('as' => 'site.contact', 'uses' => 'SiteController@paymentMethod'));
+    Route::get('/lien-he', array('as' => 'site.contact', 'uses' => 'SiteController@contact'));
 });
 Route::group(array('prefix' => 'admin', 'before' => ''), function () {
     /*****************************login,logout****************************/

@@ -7,9 +7,20 @@ $(document).ready(function(){
             console.log(input.files);
             var reader = new FileReader();
             reader.onload = function (e) {
-                console.log(e);
                 $('.product_avatar_preview').show();
                 $('.product_avatar_preview img').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function readIMG(input) {
+        if (input.files && input.files[0]) {
+            console.log(input.files);
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('.product_avatar_hover_preview').show();
+                $('.product_avatar_hover_preview img').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
         }
@@ -43,7 +54,7 @@ $(document).ready(function(){
         $(".product_avatar_old").hide();
         var fileSize = this.files[0].size;
         var fileType = this.files[0].type;
-        if(fileSize>1048576){ //do something if file size more than 1 mb (1048576)
+        if(fileSize>1048576*2){ //do something if file size more than 1 mb (1048576)
             bootbox.alert('Kích thước file ảnh quá lớn');
             $(".product_avatar_remove").trigger('click');
             return false;
@@ -71,6 +82,38 @@ $(document).ready(function(){
         $('.product_avatar_preview').hide();
     });
 
+    $("#product_avatar_hover").change(function () {
+        $(".product_avatar_hover_old").hide();
+        var fileSize = this.files[0].size;
+        var fileType = this.files[0].type;
+        if(fileSize>1048576*2){ //do something if file size more than 1 mb (1048576)
+            bootbox.alert('Kích thước file ảnh quá lớn');
+            $(".product_avatar_hover_remove").trigger('click');
+            return false;
+        }else{
+            switch(fileType){
+                case 'image/png':
+                //case 'image/gif':
+                case 'image/jpeg':
+                case 'image/pjpeg':
+                    break;
+                default:
+                    bootbox.alert('File ảnh không đúng định dạng');
+                    $(".product_avatar_hover_remove").trigger('click');
+                    $(".product_avatar_hover_old").show();
+                    return false;
+            }
+        }
+        readIMG(this);
+    });
+
+    $(".product_avatar_hover_remove").on('click', function () {
+        var $el = $('#product_avatar_hover');
+        $el.wrap('<form>').closest('form').get(0).reset();
+        $el.unwrap();
+        $('.product_avatar_hover_preview').hide();
+    });
+
     $("#product_image").change(function () {
         $(".product_image_old").hide();
         var length = parseInt(this.files.length);
@@ -80,7 +123,7 @@ $(document).ready(function(){
             var fileType = this.files[i].type;
             var name = this.files[i].name;
             console.log(fileSize);
-            if(fileSize>1048576){ //do something if file size more than 1 mb (1048576)
+            if(fileSize>1048576*2){ //do something if file size more than 1 mb (1048576)
                 bootbox.alert('Kích thước file ảnh "' + name + '" quá lớn');
                 $(".product_image_remove").trigger('click');
                 return false;

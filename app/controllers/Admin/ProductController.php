@@ -66,7 +66,7 @@ class ProductController extends BaseAdminController
         $dataSave['product_name'] = Request::get('product_name');
         $product_price = Request::get('product_price');
         $dataSave['product_price'] =  str_replace('.','',$product_price);
-        $dataSave['product_content'] = htmlspecialchars(Request::get('product_Description'));
+        $dataSave['product_content'] = htmlspecialchars(trim(Request::get('product_content')));
         $dataSave['product_status'] = (int)Request::get('product_status');
         $file_1 = $file_2 = $files = null;
         if ( Input::hasFile('product_avatar')) {
@@ -123,29 +123,27 @@ class ProductController extends BaseAdminController
             }
             if ($id > 0) {
                 if (Product::updData($id, $dataSave)) {
-                    $dataSave['product_CreatedTime'] = time();
+                    //$dataSave['product_CreatedTime'] = time();
 
                     return Redirect::route('admin.product_list');
                 }
             } else {
                 if (Product::add($dataSave)) {
-                    $dataSave['product_ModifiedTime'] = time();
+                   // $dataSave['product_ModifiedTime'] = time();
                     return Redirect::route('admin.product_list');
                 }
             }
         }
         if ($id > 0) {
             $pro = Product::find($id);
-            $dataSave['product_Image'] = $pro['product_Image'];
-            $dataSave['product_Avatar'] = $pro['product_Avatar'];
+            $dataSave['product_image'] = $pro['product_image'];
+            $dataSave['product_avatar'] = $pro['product_avatar'];
+            $dataSave['product_avatar_hover'] = $pro['product_avatar_hover'];
         }
         $this->layout->content = View::make('admin.ProductLayouts.add')
             ->with('id', $id)
             ->with('data', $dataSave)
-            ->with('error', $this->error)
-            ->with('arrCategory', $this->arrCategory)
-            ->with('arrXuatXu', $this->arrXuatXu)
-            ->with('arrDonViTinh', $this->arrDonViTinh);
+            ->with('error', $this->error);
     }
 
     public function deleteItem()

@@ -58,19 +58,13 @@
                             <tr>
                                 <td class="text-center">{{ $stt + $key+1 }}</td>
                                 <td>{{ $item['product_id'] }}</td>
-                                <td>[{{ $item['product_Code'] }}]{{ $item['product_Name'] }}</td>
-                                <td>@if(isset($arrCategory[$item['product_Category']])) {{$arrCategory[$item['product_Category']]}}@else --- @endif</td>
-                                <td class="text-center">{{ $item['product_Quantity'] }}</td>
-                                <td class="text-right">{{number_format($item['product_Price'],0,'.','.')}} đ</td>
+                                <td>{{ $item['product_name'] }}</td>
+                                <td class="text-right">{{number_format($item['product_price'],0,'.','.')}} đ</td>
                                 <td class="text-center">
                                     @if($permission_edit == 1)
                                         <a href="{{URL::route('admin.product_edit',array('id' => $item['product_id']))}}" title="Sửa item"><i class="fa fa-edit"></i></a>
                                         &nbsp;&nbsp;&nbsp;
                                     @endif
-                                    @if($permission_delete == 1)
-                                        <a href="javascript:void(0);" onclick="Admin.deleteItem({{$item['product_id']}},2)" title="Xóa Item"><i class="fa fa-trash"></i></a>
-                                    @endif
-                                    <span class="img_loading" id="img_loading_{{$item['product_id']}}"></span>
                                 </td>
                             </tr>
                         @endforeach

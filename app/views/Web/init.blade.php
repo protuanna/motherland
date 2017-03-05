@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0019)http://vietherb.vn/ -->
 <html class=" supports-js supports-no-touch supports-csstransforms supports-csstransforms3d supports-fontface" lang="vi"
       style=""><!--<![endif]-->
 <head>
@@ -43,26 +42,45 @@
     {{ HTML::script('asset/site/js/jquery.flexslider.js') }}
     {{ HTML::script('asset/site/js/scripts.js') }}
     {{ HTML::script('asset/site/js/plugin.1.0.js') }}
-
+    {{HTML::script('asset/site/js/cart.js');}}
+    {{HTML::script('assets/js/bootbox.min.js');}}
 </head>
 <body class="">
 <nav id="menu-mobile" class="">
     <ul>
-        <li><a href="#/">Home</a></li>
-        <li><span>About us</span>
+        <li>
+            <span>MotherLand</span>
             <ul>
-                <li><a href="#/about/history">History</a></li>
-                <li><span>The team</span>
-                    <ul>
-                        <li><a href="#/about/team/management">Management</a></li>
-                        <li><a href="#/about/team/sales">Sales</a></li>
-                        <li><a href="#/about/team/development">Development</a></li>
-                    </ul>
-                </li>
-                <li><a href="#/about/address">Our address</a></li>
+                @if(isset($subMenu) && sizeof($subMenu) > 0)
+                    @foreach($subMenu as $menu)
+                        <li>
+                            <a href="{{URL::route('site.page',array('id' => $menu['page_id'],'name' => FunctionLib::safe_title($menu['page_name'])))}}"
+                               title="{{$menu['page_name']}}">{{$menu['page_name']}}</a>
+                        </li>
+                    @endforeach
+                @endif
             </ul>
         </li>
-        <li><a href="#/contact">Contact</a></li>
+        <li>
+            <span>Bài thuốc dân gian</span>
+            <ul>
+
+            </ul>
+        </li>
+        <li>
+            <span>Sản phẩm</span>
+            <ul>
+                @if(isset($listProduct) && sizeof($listProduct) > 0)
+                    @foreach($listProduct as $k => $list)
+                        <li>
+                            <a href="{{URL::route('site.detail',array('id' => $k, 'name' => FunctionLib::safe_title($list)))}}" title="{{$list}}">{{$list}}</a>
+                        </li>
+                    @endforeach
+                @endif
+            </ul>
+        </li>
+        <li><a href="{{URL::route('site.payment_method')}}">Thanh toán</a></li>
+        <li><a href="{{URL::route('site.contact')}}">Liên hệ</a></li>
     </ul>
 </nav>
 <div id="page" class="mm-page mm-slideout">
@@ -89,7 +107,7 @@
                         <div class="col-lg-7 hidden-md hidden-sm hidden-xs">
                             <aside class="top-info">
                                 <div class="cart-info hidden-xs">
-                                    <a class="cart-link" href="http://vietherb.vn/cart">
+                                    <a class="cart-link" href="">
                                         <span class="icon-cart"></span>
                                         <div class="cart-number">3</div>
                                     </a>
@@ -97,10 +115,10 @@
                                         <table id="clone-item-cart" class="table-clone-cart">
                                             <tbody>
                                             <tr class="item_2 hidden">
-                                                <td class="img"><a href="http://vietherb.vn/" title=""><img
-                                                                src="http://vietherb.vn/" alt=""></a></td>
+                                                <td class="img"><a href="" title=""><img
+                                                                src="" alt=""></a></td>
                                                 <td>
-                                                    <a class="pro-title-view" href="http://vietherb.vn/" title=""></a>
+                                                    <a class="pro-title-view" href="" title=""></a>
                                                     <span class="variant"></span>
                                                     <span class="pro-quantity-view"></span>
                                                     <span class="pro-price-view"></span>
@@ -115,14 +133,14 @@
                                             <tbody>
                                             <tr>
                                                 <td class="img">
-                                                    <a href="http://vietherb.vn/products/combo-xong-tam-va-rua-mat-tan-nien">
-                                                        <img src="./Thuốc nam của người Việt – Vietherb_files/img_3804_small.jpg"
+                                                    <a href="">
+                                                        <img src=""
                                                              alt="Combo tắm + rửa mặt tân niên">
                                                     </a>
                                                 </td>
                                                 <td>
                                                     <a class="pro-title-view"
-                                                       href="http://vietherb.vn/products/combo-xong-tam-va-rua-mat-tan-nien"
+                                                       href=""
                                                        title="Combo tắm + rửa mặt tân niên">Combo tắm + rửa mặt tân
                                                         niên</a>
                                                     <span class="variant">
@@ -149,9 +167,9 @@
                                                 <td class="text-right" id="total-view-cart">360,000₫</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="http://vietherb.vn/cart" class="linktocart">Xem giỏ
+                                                <td><a href="" class="linktocart">Xem giỏ
                                                         hàng</a></td>
-                                                <td><a href="http://vietherb.vn/checkout" class="linktocheckout">Thanh
+                                                <td><a href="" class="linktocheckout">Thanh
                                                         toán</a></td>
                                             </tr>
                                             </tbody>
@@ -192,7 +210,7 @@
                                 <div class="menu-logo">
 
                                     <h1 class="logo logo-mobile">
-                                        <a href="http://vietherb.vn/">
+                                        <a href="">
                                             <img src="{{asset('asset/site/image/logo.png')}}"
                                                  alt="Motherland" class="img-responsive logoimg">
                                         </a>
@@ -225,7 +243,7 @@
                                     </div>
 
                                     <div id="cart-targets" class="cart">
-                                        <a href="http://vietherb.vn/cart" class="cart " title="Giỏ hàng">
+                                        <a href="" class="cart " title="Giỏ hàng">
                                             <span>
 
                                                 <svg class="shopping-cart">
@@ -239,7 +257,7 @@
                                 </div>
                                 <div class="search-bar-top">
                                     <div class="search-input-top">
-                                        <form action="http://vietherb.vn/search">
+                                        <form action="">
                                             <input type="hidden" name="type" value="product">
                                             <input type="text" name="q" placeholder="Tìm kiếm sản phẩm ...">
                                             <button type="submit" class="icon-search">
@@ -256,7 +274,7 @@
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav clearfix sm">
                                 <li class="dropdown active">
-                                    <a href="javascript:void(0)" title="Vietherb" class="current has-submenu">
+                                    <a href="javascript:void(0)" title="MotherLand" class="current has-submenu">
                                         <span>MotherLand</span>
                                     </a>
                                     <ul class="dropdown-menu" role="menu">
@@ -282,9 +300,9 @@
                                     </a>
                                     <ul class="dropdown-menu" role="menu">
                                         @if(isset($listProduct) && sizeof($listProduct) > 0)
-                                            @foreach($listProduct as $list)
+                                            @foreach($listProduct as $k => $list)
                                                 <li>
-                                                    <a href="{{URL::route('site.detail',array('id' => $list['product_id'], 'name' => FunctionLib::safe_title($list['product_name'])))}}" title="{{$list['product_name']}}">{{$list['product_name']}}</a>
+                                                    <a href="{{URL::route('site.detail',array('id' => $k, 'name' => FunctionLib::safe_title($list)))}}" title="{{$list}}">{{$list}}</a>
                                                 </li>
                                             @endforeach
                                         @endif
@@ -309,7 +327,7 @@
                                     <div class="search-bar">
 
                                         <div class="">
-                                            <form action="http://vietherb.vn/search">
+                                            <form action="">
                                                 <input type="hidden" name="type" value="product">
                                                 <input type="text" name="q" placeholder="Tìm kiếm..."
                                                        autocomplete="off">
@@ -328,558 +346,11 @@
                     });
                 </script>
             </nav>
-
-            <!-- Begin slider -->
-            <div class="slider-default bannerslider">
-                <div class="hrv-banner-container">
-                    <div class="hrvslider">
-                        <ul class="slides owl-carousel owl-theme">
-                            <li>
-                                <a href="http://vietherb.vn/collections/all" class="hrv-url">
-                                    <img class="img-responsive"
-                                         src="{{asset('asset/site/image/slideshow_1.jpg')}}"
-                                         alt="Rau củ quả">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://vietherb.vn/collections/all" class="hrv-url">
-                                    <img class="img-responsive"
-                                         src="{{asset('asset/site/image/slideshow_2.jpg')}}"
-                                         alt="Rau củ quả">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://vietherb.vn/collections/all" class="hrv-url">
-                                    <img class="img-responsive"
-                                         src="{{asset('asset/site/image/slideshow_3.jpg')}}"
-                                         alt="Rau củ quả">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- End slider -->
-            <script>
-                jQuery(document).ready(function () {
-                    if ($('.slides li').size() > 0) {
-                        $(".hrv-banner-container .slides").owlCarousel({
-                            singleItem: true,
-                            autoPlay: 5000,
-                            items: 1,
-                            itemsDesktop: [1199, 1],
-                            itemsDesktopSmall: [980, 1],
-                            itemsTablet: [768, 1],
-                            itemsMobile: [479, 1],
-                            slideSpeed: 500,
-                            paginationSpeed: 500,
-                            rewindSpeed: 500,
-                            addClassActive: true,
-                            navigation: true,
-                            stopOnHover: true,
-                            pagination: false,
-                            scrollPerPage: true,
-                            afterMove: nextslide,
-                            afterInit: nextslide,
-                        });
-                        function nextslide() {
-                            $(".hrv-banner-container .owl-item .hrv-banner-caption").css('display', 'none');
-                            $(".hrv-banner-container .owl-item .hrv-banner-caption").removeClass('hrv-caption')
-                            $(".hrv-banner-container .owl-item.active .hrv-banner-caption").css('display', 'block');
-
-                            var heading = $('.hrv-banner-container .owl-item.active .hrv-banner-caption').clone().removeClass();
-                            $('.hrv-banner-container .owl-item.active .hrv-banner-caption').remove();
-                            $('.hrv-banner-container .owl-item.active>li').append(heading);
-                            $('.hrv-banner-container .owl-item.active>li>div').addClass('hrv-banner-caption hrv-caption');
-                        }
-
-                    }
-                })
-
-            </script>
-
-
+            @if(isset($banner))
+                {{$banner}}
+            @endif
         </div>
-        <section id="content" class="clearfix container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <!-- Content-->
-                    <div class="main-content">
-                        <!-- Sản phẩm trang chủ -->
-
-
-                        <div class="product-list clearfix">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <aside class="styled_header  use_icon ">
-                                        <h2>What hot</h2>
-
-                                        <h3>Sản phẩm nổi bật</h3>
-                                        <span class="icon"><img
-                                                    src="{{asset('asset/site/image/icon_featured.png')}}"
-                                                    alt=""></span>
-
-                                    </aside>
-                                </div>
-                            </div>
-                            <!--Product loop-->
-                            <div class="row content-product-list products-resize">
-
-                                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
-
-
-                                    <div class="product-block product-resize fixheight" style="height: 258px;">
-                                        <div class="product-img image-resize view view-third" style="height: 174px;">
-
-
-                                            <a href="http://vietherb.vn/products/ruou-mo-long"
-                                               title="Combo rượu Mơ Lông + Đinh Lăng">
-                                                <img class="first-image  has-img" alt=" Combo rượu Mơ Lông + Đinh Lăng "
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/untitled-1_f7ef1bdbd0334847b002833af802861f_large.jpg">
-
-                                                <img class="second-image"
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/e811978672e849a1ab6d277c744dac6f_large.jpg"
-                                                     alt=" Combo rượu Mơ Lông + Đinh Lăng ">
-
-                                            </a>
-                                            <div class="actionss">
-                                                <div class="btn-quickview-products">
-                                                    <a href="javascript:void(0);" class="quickview"
-                                                       data-handle="/products/ruou-mo-long"><i
-                                                                class="fa fa-eye"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="product-detail clearfix">
-
-
-                                            <!-- sử dụng pull-left -->
-                                            <h3 class="pro-name"><a href="http://vietherb.vn/products/ruou-mo-long"
-                                                                    title="Combo rượu Mơ Lông + Đinh Lăng">Combo rượu Mơ
-                                                    Lông + Đinh Lăng </a></h3>
-                                            <div class="pro-prices">
-                                                <p class="pro-price">455,000₫</p>
-                                                <p class="pro-price-del text-left"></p>
-
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
-
-
-                                    <div class="product-block product-resize fixheight" style="height: 258px;">
-                                        <div class="product-img image-resize view view-third" style="height: 174px;">
-
-
-                                            <a href="http://vietherb.vn/products/combo-xong-tam-va-rua-mat-tan-nien"
-                                               title="Combo tắm + rửa mặt tân niên">
-                                                <img class="first-image  has-img" alt=" Combo tắm + rửa mặt tân niên "
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/img_3804_large.jpg">
-
-                                                <img class="second-image"
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/img_3800_f116f5beeff1416796cf329be438f1ca_large.jpg"
-                                                     alt=" Combo tắm + rửa mặt tân niên ">
-
-                                            </a>
-                                            <div class="actionss">
-                                                <div class="btn-cart-products">
-                                                    <a href="javascript:void(0);"
-                                                       onclick="add_item_show_modalCart(1009874516)">
-                                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="view-details">
-                                                    <a href="http://vietherb.vn/products/combo-xong-tam-va-rua-mat-tan-nien"
-                                                       class="view-detail">
-                                                        <span><i class="fa fa-clone"> </i></span>
-                                                    </a>
-                                                </div>
-                                                <div class="btn-quickview-products">
-                                                    <a href="javascript:void(0);" class="quickview"
-                                                       data-handle="/products/combo-xong-tam-va-rua-mat-tan-nien"><i
-                                                                class="fa fa-eye"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="product-detail clearfix">
-
-
-                                            <!-- sử dụng pull-right -->
-                                            <h3 class="pro-name"><a
-                                                        href="http://vietherb.vn/products/combo-xong-tam-va-rua-mat-tan-nien"
-                                                        title="Combo tắm + rửa mặt tân niên">Combo tắm + rửa mặt tân
-                                                    niên </a></h3>
-                                            <div class="pro-prices">
-                                                <p class="pro-price">120,000₫</p>
-                                                <p class="pro-price-del text-left"></p>
-
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
-
-
-                                    <div class="product-block product-resize fixheight" style="height: 258px;">
-                                        <div class="product-img image-resize view view-third" style="height: 174px;">
-
-
-                                            <a href="http://vietherb.vn/products/ruou-tao-meo"
-                                               title="Combo Táo mèo + Sâm cau+ Me rừng">
-                                                <img class="first-image  has-img"
-                                                     alt=" Combo Táo mèo + Sâm cau+ Me rừng "
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/untitled-2_5fb911d46fc04bed9a1018e404d769ce_large.jpg">
-
-                                                <img class="second-image"
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/bbb135152c294367a86b7469fc08e9eb_large.jpg"
-                                                     alt=" Combo Táo mèo + Sâm cau+ Me rừng ">
-
-                                            </a>
-                                            <div class="actionss">
-                                                <div class="btn-cart-products">
-                                                    <a href="javascript:void(0);"
-                                                       onclick="add_item_show_modalCart(1009983752)">
-                                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="view-details">
-                                                    <a href="http://vietherb.vn/products/ruou-tao-meo"
-                                                       class="view-detail">
-                                                        <span><i class="fa fa-clone"> </i></span>
-                                                    </a>
-                                                </div>
-                                                <div class="btn-quickview-products">
-                                                    <a href="javascript:void(0);" class="quickview"
-                                                       data-handle="/products/ruou-tao-meo"><i
-                                                                class="fa fa-eye"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="product-detail clearfix">
-
-
-                                            <!-- sử dụng pull-left -->
-                                            <h3 class="pro-name"><a href="http://vietherb.vn/products/ruou-tao-meo"
-                                                                    title="Combo Táo mèo + Sâm cau+ Me rừng">Combo Táo
-                                                    mèo + Sâm cau+ Me rừng </a></h3>
-                                            <div class="pro-prices">
-                                                <p class="pro-price">525,000₫</p>
-                                                <p class="pro-price-del text-left"></p>
-
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
-
-
-                                    <div class="product-block product-resize fixheight" style="height: 258px;">
-                                        <div class="product-img image-resize view view-third" style="height: 174px;">
-
-
-                                            <a href="http://vietherb.vn/products/qua-giat-bo-hon"
-                                               title="ECO&#39;NUT (Bồ hòn bột)">
-                                                <img class="first-image " alt=" ECO&#39;NUT (Bồ hòn bột) "
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/img_3472_large.jpg">
-
-                                            </a>
-                                            <div class="actionss">
-                                                <div class="btn-cart-products">
-                                                    <a href="javascript:void(0);"
-                                                       onclick="add_item_show_modalCart(1008241939)">
-                                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="view-details">
-                                                    <a href="http://vietherb.vn/products/qua-giat-bo-hon"
-                                                       class="view-detail">
-                                                        <span><i class="fa fa-clone"> </i></span>
-                                                    </a>
-                                                </div>
-                                                <div class="btn-quickview-products">
-                                                    <a href="javascript:void(0);" class="quickview"
-                                                       data-handle="/products/qua-giat-bo-hon"><i class="fa fa-eye"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="product-detail clearfix">
-
-
-                                            <!-- sử dụng pull-right -->
-                                            <h3 class="pro-name"><a href="http://vietherb.vn/products/qua-giat-bo-hon"
-                                                                    title="ECO&#39;NUT (Bồ hòn bột)">ECO'NUT (Bồ hòn
-                                                    bột) </a></h3>
-                                            <div class="pro-prices">
-                                                <p class="pro-price">135,000₫</p>
-                                                <p class="pro-price-del text-left"></p>
-
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
-
-
-                                    <div class="product-block product-resize fixheight" style="height: 258px;">
-                                        <div class="product-img image-resize view view-third" style="height: 174px;">
-
-
-                                            <a href="http://vietherb.vn/products/essenoo-tinh-dau-vo-buoi-10ml"
-                                               title="Essenoo - tinh dầu vỏ bưởi">
-                                                <img class="first-image " alt=" Essenoo - tinh dầu vỏ bưởi "
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/img_3448_large.jpg">
-
-                                            </a>
-                                            <div class="actionss">
-                                                <div class="btn-cart-products">
-                                                    <a href="javascript:void(0);"
-                                                       onclick="add_item_show_modalCart(1008241962)">
-                                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="view-details">
-                                                    <a href="http://vietherb.vn/products/essenoo-tinh-dau-vo-buoi-10ml"
-                                                       class="view-detail">
-                                                        <span><i class="fa fa-clone"> </i></span>
-                                                    </a>
-                                                </div>
-                                                <div class="btn-quickview-products">
-                                                    <a href="javascript:void(0);" class="quickview"
-                                                       data-handle="/products/essenoo-tinh-dau-vo-buoi-10ml"><i
-                                                                class="fa fa-eye"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="product-detail clearfix">
-
-
-                                            <!-- sử dụng pull-left -->
-                                            <h3 class="pro-name"><a
-                                                        href="http://vietherb.vn/products/essenoo-tinh-dau-vo-buoi-10ml"
-                                                        title="Essenoo - tinh dầu vỏ bưởi">Essenoo - tinh dầu vỏ
-                                                    bưởi </a></h3>
-                                            <div class="pro-prices">
-                                                <p class="pro-price">140,000₫</p>
-                                                <p class="pro-price-del text-left"></p>
-
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
-
-
-                                    <div class="product-block product-resize fixheight" style="height: 258px;">
-                                        <div class="product-img image-resize view view-third" style="height: 174px;">
-
-
-                                            <a href="http://vietherb.vn/products/greenoo-rua-massage-mat"
-                                               title="Greenoo - Rửa &amp; Massage mặt">
-                                                <img class="first-image " alt=" Greenoo - Rửa &amp; Massage mặt "
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/vh-_grenoo_large.jpg">
-
-                                            </a>
-                                            <div class="actionss">
-                                                <div class="btn-cart-products">
-                                                    <a href="javascript:void(0);"
-                                                       onclick="add_item_show_modalCart(1008241958)">
-                                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="view-details">
-                                                    <a href="http://vietherb.vn/products/greenoo-rua-massage-mat"
-                                                       class="view-detail">
-                                                        <span><i class="fa fa-clone"> </i></span>
-                                                    </a>
-                                                </div>
-                                                <div class="btn-quickview-products">
-                                                    <a href="javascript:void(0);" class="quickview"
-                                                       data-handle="/products/greenoo-rua-massage-mat"><i
-                                                                class="fa fa-eye"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="product-detail clearfix">
-
-
-                                            <!-- sử dụng pull-right -->
-                                            <h3 class="pro-name"><a
-                                                        href="http://vietherb.vn/products/greenoo-rua-massage-mat"
-                                                        title="Greenoo - Rửa &amp; Massage mặt">Greenoo - Rửa &amp;
-                                                    Massage mặt </a></h3>
-                                            <div class="pro-prices">
-                                                <p class="pro-price">230,000₫</p>
-                                                <p class="pro-price-del text-left"></p>
-
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
-
-
-                                    <div class="product-block product-resize fixheight" style="height: 258px;">
-                                        <div class="product-img image-resize view view-third" style="height: 174px;">
-
-
-                                            <a href="http://vietherb.vn/products/ngam-chan-thao-duoc"
-                                               title="Ngâm chân thảo dược">
-                                                <img class="first-image " alt=" Ngâm chân thảo dược "
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/vh-_ngam_chan_thao_duoc_large.jpg">
-
-                                            </a>
-                                            <div class="actionss">
-                                                <div class="btn-cart-products">
-                                                    <a href="javascript:void(0);"
-                                                       onclick="add_item_show_modalCart(1008241975)">
-                                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="view-details">
-                                                    <a href="http://vietherb.vn/products/ngam-chan-thao-duoc"
-                                                       class="view-detail">
-                                                        <span><i class="fa fa-clone"> </i></span>
-                                                    </a>
-                                                </div>
-                                                <div class="btn-quickview-products">
-                                                    <a href="javascript:void(0);" class="quickview"
-                                                       data-handle="/products/ngam-chan-thao-duoc"><i
-                                                                class="fa fa-eye"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="product-detail clearfix">
-
-
-                                            <!-- sử dụng pull-left -->
-                                            <h3 class="pro-name"><a
-                                                        href="http://vietherb.vn/products/ngam-chan-thao-duoc"
-                                                        title="Ngâm chân thảo dược">Ngâm chân thảo dược </a></h3>
-                                            <div class="pro-prices">
-                                                <p class="pro-price">140,000₫</p>
-                                                <p class="pro-price-del text-left"></p>
-
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
-
-
-                                    <div class="product-block product-resize fixheight" style="height: 258px;">
-                                        <div class="product-img image-resize view view-third" style="height: 174px;">
-
-
-                                            <a href="http://vietherb.vn/products/ruou-nho-rung"
-                                               title="Rượu Nho Rừng + Hà Thủ Ô">
-                                                <img class="first-image  has-img" alt=" Rượu Nho Rừng + Hà Thủ Ô "
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/untitled-3_large.jpg">
-
-                                                <img class="second-image"
-                                                     src="./Thuốc nam của người Việt – Vietherb_files/a8785b0b35454740a7da772ee3032a9c_large.jpg"
-                                                     alt=" Rượu Nho Rừng + Hà Thủ Ô ">
-
-                                            </a>
-                                            <div class="actionss">
-                                                <div class="btn-cart-products">
-                                                    <a href="javascript:void(0);"
-                                                       onclick="add_item_show_modalCart(1009984008)">
-                                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="view-details">
-                                                    <a href="http://vietherb.vn/products/ruou-nho-rung"
-                                                       class="view-detail">
-                                                        <span><i class="fa fa-clone"> </i></span>
-                                                    </a>
-                                                </div>
-                                                <div class="btn-quickview-products">
-                                                    <a href="javascript:void(0);" class="quickview"
-                                                       data-handle="/products/ruou-nho-rung"><i
-                                                                class="fa fa-eye"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="product-detail clearfix">
-
-
-                                            <!-- sử dụng pull-right -->
-                                            <h3 class="pro-name"><a href="http://vietherb.vn/products/ruou-nho-rung"
-                                                                    title="Rượu Nho Rừng + Hà Thủ Ô">Rượu Nho Rừng + Hà
-                                                    Thủ Ô </a></h3>
-                                            <div class="pro-prices">
-                                                <p class="pro-price">390,000₫</p>
-                                                <p class="pro-price-del text-left"></p>
-
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Product loop-->
-                    </div>
-                    <!-- end Content-->
-                </div>
-            </div>
-        </section>
+        {{$content}}
         <footer id="footer">
             <div class="footer-bottom">
                 <div class="container">
@@ -953,7 +424,7 @@
                                 <div class="inner">
 
 
-                                    <form accept-charset="UTF-8" action="http://vietherb.vn/account/contact"
+                                    <form accept-charset="UTF-8" action=""
                                           class="contact-form" method="post">
                                         <input name="form_type" type="hidden" value="customer">
                                         <input name="utf8" type="hidden" value="✓">
@@ -981,60 +452,49 @@
                                     <ul class="list-inline">
 
                                         <li>
-                                            <a target="_blank" href="http://vietherb.vn/vietherb.vn"
-                                               class="social-wrapper facebook">
-        <span class="social-icon">
-          <i class="fa fa-facebook"></i>
-        </span>
+                                            <a target="_blank" href="https://www.facebook.com/thuocquynuocnam/?fref=ts" class="social-wrapper facebook">
+                                                <span class="social-icon">
+                                                  <i class="fa fa-facebook"></i>
+                                                </span>
                                             </a>
                                         </li>
-
-
                                         <li>
-                                            <a target="_blank" href="http://vietherb.vn/"
+                                            <a target="_blank" href="javascript:void(0)"
                                                class="social-wrapper twitter">
-        <span class="social-icon">
-          <i class="fa fa-twitter"></i>
-        </span>
+                                                    <span class="social-icon">
+                                                      <i class="fa fa-twitter"></i>
+                                                    </span>
                                             </a>
                                         </li>
-
-
                                         <li>
-                                            <a target="_blank" href="http://vietherb.vn/"
+                                            <a target="_blank" href="javascript:void(0)"
                                                class="social-wrapper pinterest">
-        <span class="social-icon">
-          <i class="fa fa-pinterest"></i>
-        </span>
+                                                    <span class="social-icon">
+                                                      <i class="fa fa-pinterest"></i>
+                                                    </span>
                                             </a>
                                         </li>
-
-
                                         <li>
-                                            <a target="_blank" href="http://vietherb.vn/" class="social-wrapper google">
-        <span class="social-icon">
-          <i class="fa fa-google-plus"></i>
-        </span>
+                                            <a target="_blank" href="javascript:void(0)" class="social-wrapper google">
+                                                <span class="social-icon">
+                                                  <i class="fa fa-google-plus"></i>
+                                                </span>
                                             </a>
                                         </li>
-
-
                                         <li>
-                                            <a target="_blank" href="http://vietherb.vn/"
+                                            <a target="_blank" href="javascript:void(0)"
                                                class="social-wrapper youtube">
-        <span class="social-icon">
-          <i class="fa fa-youtube"></i>
-        </span>
+                                                <span class="social-icon">
+                                                    <i class="fa fa-youtube"></i>
+                                                </span>
                                             </a>
                                         </li>
-
-
                                         <li>
-                                            <a target="_blank" href="http://vietherb.vn/"
+                                            <a target="_blank" href="javascript:void(0)"
                                                class="social-wrapper instagram">
-        <span class="social-icon">
-          <i class="fa fa-instagram"></i>
-        </span>
+                                                <span class="social-icon">
+                                                  <i class="fa fa-instagram"></i>
+                                                </span>
                                             </a>
                                         </li>
 

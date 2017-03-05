@@ -10,8 +10,11 @@ class FunctionLib {
 
     public static $array_allow_image = array(
         'jpg',
+        'JPG',
         'png',
-        'jpeg'
+        'PNG',
+        'jpeg',
+        'JPEG'
     );
 
     public static $array_allow_file = array(
@@ -22,7 +25,7 @@ class FunctionLib {
         'pdf'
     );
 
-    public static $size_image_max = 1048576;
+    public static $size_image_max = 2097152;
 
     public  static function numberToWord($s, $lang = 'vi') {
         $ds = 0;

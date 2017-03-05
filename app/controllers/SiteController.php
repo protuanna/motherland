@@ -32,9 +32,27 @@ class SiteController extends BaseController {
 
     public function home()
     {
-
-        //$this->layout = View::make('Web._index');
+        $this->banner();
+        $products = Product::getProductHome();
+        $this->layout->content = View::make('Web.home')->with('products',$products);
     }
 
+    public function banner(){
+        $banner = Banner::getBannerRun();
+        $this->layout->banner = View::make('Web.banner')->with('banner',$banner);
+    }
 
+    public function detail($id, $name)
+    {
+        $product = Product::find($id);
+        $this->layout->content = View::make('Web.detail')->with('product', $product)->with('id', $id);
+    }
+
+    public function paymentMethod(){
+        $this->layout->content = View::make('Web.payment_method');
+    }
+
+    public function contact(){
+        $this->layout->content = View::make('Web.contact');
+    }
 }

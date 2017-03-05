@@ -26,7 +26,7 @@
                     <label for="product_name"><i>Tên sản phẩm</i><span style="color: red"> *</span></label>
                     <input type="text" placeholder="Tên sản phẩm" id="product_name" name="product_name"
                            class="form-control input-sm"
-                           value="@if(isset($data['product_Name'])){{$data['product_Name']}}@endif">
+                           value="@if(isset($data['product_name'])){{$data['product_name']}}@endif">
                 </div>
                 <div class="form-group col-sm-3">
                     <label for="product_price"><i>Giá</i></label>
@@ -39,8 +39,8 @@
                         <option value="1" @if(isset($data['product_status']) && $data['product_status'] == 1) selected="selected" @endif>Hiện</option>
                     </select>
                 </div>
-                <div class="form-group col-sm-4">
-                    <label>Ảnh đại diện (Size <= 1mb. Ảnh : png,jpg,jpeg. Tỉ lệ 1:1)</label>
+                <div class="form-group col-sm-3">
+                    <label>Ảnh đại diện</label>
                     <div class="clearfix"></div>
                     <label class="ace-file-input">
                         <input type="file" id="product_avatar" name="product_avatar" accept="image/*">
@@ -63,8 +63,8 @@
                     @endif
                 </div>
 
-                <div class="form-group col-sm-4">
-                    <label>Ảnh hover (Size <= 1mb. Ảnh : png,jpg,jpeg. Tỉ lệ 1:1)</label>
+                <div class="form-group col-sm-3">
+                    <label>Ảnh hover</label>
                     <div class="clearfix"></div>
                     <label class="ace-file-input">
                         <input type="file" id="product_avatar_hover" name="product_avatar_hover" accept="image/*">
@@ -87,7 +87,7 @@
                     @endif
                 </div>
 
-                <div class="form-group col-sm-4">
+                <div class="form-group col-sm-6">
                     <label>Ảnh sản phẩm (Size <= 1mb. Ảnh : png,jpg,jpeg. Tỉ lệ 1:1)</label>
                     <div class="clearfix"></div>
                     <label class="ace-file-input">
@@ -101,9 +101,9 @@
                     <div style="width: 100%;display: none;" class="product_image_preview">
 
                     </div>
-                    @if(isset($data['product_Image']) && $data['product_Image'] != '')
+                    @if(isset($data['product_image']) && $data['product_image'] != '')
                         <div style="width: 100%;" class="product_image_old">
-                            <?php $aryImage = json_decode($data['product_Image'],true);?>
+                            <?php $aryImage = json_decode($data['product_image'],true);?>
                             @foreach($aryImage as $image)
                                     <div style="width: 156px;height: 156px;padding: 2px;margin: 2px;border: 1px solid gainsboro;float: left"><img src="{{Croppa::url(Constant::dir_product.$image, 150, 150)}}" alt="" width="150" height="150"></div>
                             @endforeach
@@ -113,13 +113,19 @@
                         </div>--}}
                     @endif
                 </div>
-                <div class="form-group col-sm-6">
-                    <label for="customers_Description"><i>Mô tả</i></label>
-                    <textarea rows="8" class="form-control input-sm" id="product_Description" name="product_Description">@if(isset($data['product_Description'])){{$data['product_Description']}}@endif</textarea>
+                <div class="clearfix"></div>
+                <div class="col-sm-12">
+                    <div class="wysiwyg-editor" id="editor1">
+                        @if(isset($data['product_content']))
+                            {{htmlspecialchars_decode($data['product_content'])}}
+                        @endif
+                    </div>
+                    <input type="hidden" id="product_content" name="product_content" @if(isset($data['product_content'])) value="" @endif>
                 </div>
                 <!-- PAGE CONTENT ENDS -->
-                <div class="form-group col-sm-12 text-right">
-                    <button  class="btn btn-primary"><i class="glyphicon glyphicon-floppy-saved"></i> Lưu lại</button>
+                <div class="clearfix space-6"></div>
+                <div class="form-group col-sm-12 text-right" style="margin-top: 30px">
+                    <button  class="btn btn-primary sys_save_product"><i class="glyphicon glyphicon-floppy-saved"></i> Lưu lại</button>
                 </div>
                 {{ Form::close() }}
             </div>
@@ -128,9 +134,119 @@
         <!-- /.row -->
     </div><!-- /.page-content -->
 </div>
+{{ HTML::script('assets/js/markdown.min.js'); }}
+{{ HTML::script('assets/js/bootstrap-markdown.min.js'); }}
+{{ HTML::script('assets/js/jquery.hotkeys.min.js'); }}
+{{ HTML::script('assets/js/bootstrap-wysiwyg.min.js'); }}
 <script>
     $("#product_price").on('keyup', function (event) {
-            product.fomatNumber('product_price');
+        product.fomatNumber('product_price');
+    });
+    $(document).ready(function(){
+        function showErrorAlert (reason, detail) {
+            var msg='';
+            if (reason==='unsupported-file-type') { msg = "Unsupported format " +detail; }
+            else {
+                //console.log("error uploading file", reason, detail);
+            }
+            $('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>'+
+                '<strong>File upload error</strong> '+msg+' </div>').prependTo('#alerts');
+        }
+        $('#editor1').ace_wysiwyg({
+            toolbar:
+                [
+                    'font',
+                    null,
+                    'fontSize',
+                    null,
+                    {name:'bold', className:'btn-info'},
+                    {name:'italic', className:'btn-info'},
+                    {name:'strikethrough', className:'btn-info'},
+                    {name:'underline', className:'btn-info'},
+                    null,
+                    {name:'insertunorderedlist', className:'btn-success'},
+                    {name:'insertorderedlist', className:'btn-success'},
+                    {name:'outdent', className:'btn-purple'},
+                    {name:'indent', className:'btn-purple'},
+                    null,
+                    {name:'justifyleft', className:'btn-primary'},
+                    {name:'justifycenter', className:'btn-primary'},
+                    {name:'justifyright', className:'btn-primary'},
+                    {name:'justifyfull', className:'btn-inverse'},
+                    null,
+                    {name:'createLink', className:'btn-pink'},
+                    {name:'unlink', className:'btn-pink'},
+                    null,
+                    {name:'insertImage', className:'btn-success'},
+                    null,
+                    'foreColor',
+                    null,
+                    {name:'undo', className:'btn-grey'},
+                    {name:'redo', className:'btn-grey'}
+                ],
+            'wysiwyg': {
+                fileUploadError: showErrorAlert
+            }
+        }).prev().addClass('wysiwyg-style2');
+
+        if ( typeof jQuery.ui !== 'undefined' && ace.vars['webkit'] ) {
+
+            var lastResizableImg = null;
+            function destroyResizable() {
+                if(lastResizableImg == null) return;
+                lastResizableImg.resizable( "destroy" );
+                lastResizableImg.removeData('resizable');
+                lastResizableImg = null;
+            }
+
+            var enableImageResize = function() {
+                $('.wysiwyg-editor')
+                    .on('mousedown', function(e) {
+                        var target = $(e.target);
+                        if( e.target instanceof HTMLImageElement ) {
+                            if( !target.data('resizable') ) {
+                                target.resizable({
+                                    aspectRatio: e.target.width / e.target.height,
+                                });
+                                target.data('resizable', true);
+
+                                if( lastResizableImg != null ) {
+                                    //disable previous resizable image
+                                    lastResizableImg.resizable( "destroy" );
+                                    lastResizableImg.removeData('resizable');
+                                }
+                                lastResizableImg = target;
+                            }
+                        }
+                    })
+                    .on('click', function(e) {
+                        if( lastResizableImg != null && !(e.target instanceof HTMLImageElement) ) {
+                            destroyResizable();
+                        }
+                    })
+                    .on('keydown', function() {
+                        destroyResizable();
+                    });
+            }
+
+            enableImageResize();
+
+            /**
+             //or we can load the jQuery UI dynamically only if needed
+             if (typeof jQuery.ui !== 'undefined') enableImageResize();
+             else {//load jQuery UI if not loaded
+			//in Ace demo dist will be replaced by correct assets path
+			$.getScript("assets/js/jquery-ui.custom.min.js", function(data, textStatus, jqxhr) {
+				enableImageResize()
+			});
+		}
+             */
+        }
+
+        $(".sys_save_product").on('click',function(){
+            $("#product_content").val($("#editor1").html());
+            $('form').submit();
         });
+    })
 </script>
 {{HTML::script('assets/admin/js/product.js');}}
