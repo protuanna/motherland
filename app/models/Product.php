@@ -15,7 +15,7 @@ class Product extends Eloquent
 
     public $timestamps = false;
 
-    protected $fillable = array('product_name', 'product_status', 'product_avatar', 'product_avatar_hover', 'product_image', 'product_content',);
+    protected $fillable = array('product_name', 'product_status', 'product_avatar', 'product_avatar_hover', 'product_image', 'product_content','product_price');
 
     public function importproduct() {
         return $this->hasMany('ImportProduct');

@@ -24,28 +24,25 @@ class AjaxSiteController extends BaseController
         }
         $cart = Session::has('cart') ? Session::get('cart') : array();
         if(isset($cart[$product_id])){
-            $cart[$product_id]['product_num'] += $product_num;
+            $cart[$product_id] = array(
+                'product_id' => $product_id,
+                'product_num' => $cart[$product_id]['product_num'] + $product_num,
+                'product_name' => $product['product_name'],
+                'product_avatar' => $product['product_avatar'],
+                'product_price' => $product['product_price'],
+            );
         }else{
             $cart[$product_id] = array(
                 'product_id' => $product_id,
                 'product_num' => $product_num,
-                'product_Code' => $product['product_Code'],
-                'product_Name' => $product['product_Name'],
-                'product_Avatar' => $product['product_Avatar'],
-                'product_Price' => $product['product_Price'],
-                'product_bulk_quantity' => $product['product_bulk_quantity'],
-                'product_bulk_price' => $product['product_bulk_price'],
+                'product_name' => $product['product_name'],
+                'product_avatar' => $product['product_avatar'],
+                'product_price' => $product['product_price'],
             );
-        }
-        if($cart[$product_id]['product_num'] >= $product['product_bulk_quantity'] && $product['product_bulk_quantity'] > 0){
-            $cart[$product_id]['product_price_buy'] = $product['product_bulk_price'];
-        }else{
-            $cart[$product_id]['product_price_buy'] = $product['product_Price'];
         }
         Session::put('cart', $cart);
         $data['success'] = 1;
-        $data['num_total'] = count($cart);
-        $data['html'] = View::make('site.Web.cart')->with('cart',$cart)->render();
+        $data['url'] = URL::route('site.cart');
         return Response::json($data);
     }
 

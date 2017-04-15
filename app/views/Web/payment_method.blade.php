@@ -9,7 +9,6 @@
             </div>
         </div>
     </div>
-
 </div>
 <section id="content" class="clearfix container">
     <div class="row">

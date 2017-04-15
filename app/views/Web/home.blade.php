@@ -27,8 +27,8 @@
                         <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
 
 
-                            <div class="product-block product-resize fixheight" style="height: 344px;">
-                                <div class="product-img image-resize view view-third" style="height: 260px;">
+                            <div class="product-block product-resize fixheight">
+                                <div class="product-img image-resize view view-third">
                                     <a href="{{URL::route('site.detail',array('id' => $product['product_id'],'name' => FunctionLib::safe_title($product['product_name'])))}}"
                                        title="{{$product['product_name']}}">
                                         <img class="first-image  has-img" alt="{{$product['product_name']}}"

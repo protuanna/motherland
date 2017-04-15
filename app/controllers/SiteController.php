@@ -55,4 +55,9 @@ class SiteController extends BaseController {
     public function contact(){
         $this->layout->content = View::make('Web.contact');
     }
+
+    public function cart(){
+        $cart = Session::has('cart') ? Session::get('cart') : array();
+        $this->layout->content = View::make('Web.cart');
+    }
 }

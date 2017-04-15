@@ -14,9 +14,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0" name="viewport">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Thuốc nam của người Việt">
-    <meta property="og:image" content="http://hstatic.net/609/1000111609/1000206992/share_fb_home.png?v=227">
-    <meta property="og:image" content="https://hstatic.net/609/1000111609/1000206992/share_fb_home.png?v=227">
+    <meta property="og:title" content="Thuốc quý nước Nam">
+    <meta property="og:image" content="{{asset('asset/site/image/logo.png')}}">
+    <meta property="og:image" content="{{asset('asset/site/image/logo.png')}}">
     <meta property="og:description"
           content="Sống bình dị, yêu thiên nhiên cây cỏ, sống không gây hại cho môi trường, có niềm tin vào khả năng vô hạn của tự nhiên, tôn vinh tri thức thuốc nam truyền thống.">
     <meta property="og:url" content="{{URL::full()}}">

@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'motherland',
-			'username'  => 'root',
-			'password'  => '',
+			'database'  => 'motherla_db',
+			'username'  => 'motherla_cto',
+			'password'  => 'QXa~9bx^1ct1',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
